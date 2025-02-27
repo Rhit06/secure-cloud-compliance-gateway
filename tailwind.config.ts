@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,88 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-in-right': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'fade-in-left': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(-20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'scale-up': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'blur-in': {
+					'0%': {
+						filter: 'blur(5px)',
+						opacity: '0'
+					},
+					'100%': {
+						filter: 'blur(0)',
+						opacity: '1'
+					}
+				},
+				'rotate-slow': {
+					'0%': {
+						transform: 'rotate(0deg)'
+					},
+					'100%': {
+						transform: 'rotate(360deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.7s ease-out',
+				'fade-in-right': 'fade-in-right 0.7s ease-out',
+				'fade-in-left': 'fade-in-left 0.7s ease-out',
+				'scale-up': 'scale-up 0.5s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'blur-in': 'blur-in 0.7s ease-out',
+				'rotate-slow': 'rotate-slow 25s linear infinite'
+			},
+			fontFamily: {
+				sans: ['SF Pro Display', 'Inter', 'sans-serif'],
+				mono: ['SF Mono', 'monospace']
 			}
 		}
 	},
