@@ -8,8 +8,8 @@ import ScrollReveal from './ScrollReveal';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
-    name: '',
-    email: '',
+    name: 'Tanush',
+    email: 'Rhythmduggal@gmail.com',
     company: '',
     message: '',
   });
@@ -83,7 +83,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-sm font-medium text-white/70">Visit Us</h4>
-                      <p className="text-lg">123 Finance Street, New York, NY 10001</p>
+                      <p className="text-lg">Indian Institute of Information Technology, Bhopal, M.P.</p>
                     </div>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ const Contact = () => {
                           name="name"
                           value={formState.name}
                           onChange={handleInputChange}
-                          placeholder="John Doe"
+                          placeholder="Tanush"
                           required
                           className="w-full"
                         />
@@ -150,7 +150,7 @@ const Contact = () => {
                           type="email"
                           value={formState.email}
                           onChange={handleInputChange}
-                          placeholder="john@example.com"
+                          placeholder="Rhythmduggal@gmail.com"
                           required
                           className="w-full"
                         />
