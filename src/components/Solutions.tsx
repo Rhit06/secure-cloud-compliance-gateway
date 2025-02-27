@@ -1,5 +1,5 @@
 
-import { ArrowRight, AlertCircle, LineChart, ShieldCheck, Database } from 'lucide-react';
+import { ArrowRight, AlertCircle, LineChart, ShieldCheck, Database, Fingerprint } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ScrollReveal from './ScrollReveal';
 
@@ -104,7 +104,7 @@ const Solutions = () => {
                   <div className="bg-gradient-to-br from-primary/10 to-primary/30 p-8 md:p-12 h-full flex items-center justify-center">
                     <div className="glass-card p-1 rounded-xl shadow-lg transform rotate-2 overflow-hidden">
                       <img 
-                        src={`https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600`} 
+                        src={`https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?auto=format&fit=crop&q=80&w=600`} 
                         alt={solution.title} 
                         className="w-full h-auto rounded-lg"
                       />
