@@ -13,7 +13,8 @@ const solutions = [
       'Custom anomaly thresholds',
       'Automated alert escalation',
       'Historical pattern analysis'
-    ]
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&q=80&w=600'
   },
   {
     icon: LineChart,
@@ -24,7 +25,8 @@ const solutions = [
       'Impact assessment automation',
       'Implementation roadmapping',
       'Compliance readiness scoring'
-    ]
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=600'
   },
   {
     icon: ShieldCheck,
@@ -35,7 +37,8 @@ const solutions = [
       'Document authenticity checks',
       'Automated sanctions screening',
       'Ongoing customer monitoring'
-    ]
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?auto=format&fit=crop&q=80&w=600'
   },
   {
     icon: Database,
@@ -46,7 +49,8 @@ const solutions = [
       'Report template generation',
       'Validation and error detection',
       'Regulatory submission tracking'
-    ]
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=600'
   }
 ];
 
@@ -104,7 +108,7 @@ const Solutions = () => {
                   <div className="bg-gradient-to-br from-primary/10 to-primary/30 p-8 md:p-12 h-full flex items-center justify-center">
                     <div className="glass-card p-1 rounded-xl shadow-lg transform rotate-2 overflow-hidden">
                       <img 
-                        src={`https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?auto=format&fit=crop&q=80&w=600`} 
+                        src={solution.imageUrl} 
                         alt={solution.title} 
                         className="w-full h-auto rounded-lg"
                       />
